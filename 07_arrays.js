@@ -32,3 +32,25 @@ const secondList = [4, 5, 6]
 const thirdList = firstList.concat(secondList)
 
 console.log(thirdList) // [1, 2, 3, 4, 5, 6]
+
+// Add items to an Array
+var cities = ["Hyderabad", "Chennai", "Bangalore"];
+cities.push("Delhi"); // push adds at the end of an array.
+console.log(cities);
+
+cities.unshift("Mumbai"); // unshift, adds elements to the front of an array
+console.log(cities);
+
+// Loop over an array
+
+for(var i=0;i<cities.length;i++)
+    console.log(cities[i]+"\n");
+
+
+// Remove items from an Array
+
+cities.pop(); // removes last element
+console.log(cities);
+cities.shift(); // removes front element
+console.log(cities);
+
