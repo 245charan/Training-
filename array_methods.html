@@ -1,0 +1,51 @@
+<!-- 
+    ForEach()
+    join()
+    split()
+    indexOf()
+    includes()
+    slice()-> (startIndex,endIndex)
+    splice()-> takes 2 arguments(index,NoOfElemnt,Elements(Optional))
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script>
+        //forEach()
+        var cities = ["Hyderabad", "Chennai", "Bangalore", "Delhi", "Mumbai"];
+        cities.forEach(function (val, i, arr) {
+            document.write(i + ": " + val + "<br>");
+        });
+        // join()
+        var str = cities.join("-");
+        document.write(str);
+        var string = ' People wil change people will learn';
+        // split()
+        var arr = string.split(" ");
+        document.write(typeof arr + ": " + arr);
+        //IndexOF()
+        cities.indexOf("Gandinagar"); //returns -1;
+        cities.indexOf("Hyderabad"); //returns 0;
+        // includes()
+        cities.includes("Gandinagar"); //returns false;
+        cities.includes("Hyderabad"); //returns true;
+        //slice()
+        varr arr = cities.slice(0,2); // returns["Hyderabad","Chennai"]
+        //splice()
+        var months = ["Jan", "Feb","Mar","Apr","May"];
+        months.splice(0,1); // removes the first item
+        document.write(months);
+        months.splice(1,2); // removes the  second, third items
+        document.write(months);
+
+    </script>
+</body>
+
+</html>
