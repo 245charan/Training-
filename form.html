@@ -1,0 +1,44 @@
+<html>
+    <head><title>Forms</title></head>
+<body>
+<form name="registration" onsubmit="return validateForm();">
+    Enter your name: <input type="text" name="uname" value="acs" readonly><br>
+    Enter your address:<input type="textarea" name="add"><br>
+    Describe about yourself:<textarea name="permanent" rows="6" cols="6">ACS Solutions is a leading global information technology, consulting, and business solutions organization. Since 1998, we have been a trusted partner to mid-market and enterprise clients worldwide in their digital transformation journey.</textarea>
+    <fieldset>
+       <legend>About college:</legend>
+       <label for="cname">college name:</label>
+       <input type="text" id="cname" name="cname"><br>
+       <label for="caddr">location:</label>
+       <input type="text" id="caddr" name="caddr"><br>
+     </fieldset>
+    Enter your password: <input type="password" name="pwd" placeholder="contains atleast one special characters"><br>
+    Choose your Gender: <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female<br>
+    Enter your Age: <input type="number" name="age"><br>
+    Enter your email: <input type="text" name="email"><br>
+    Choose ur country: 
+    <select name="country" size="5" multiple>
+   <option value="Default">(Please select a country)</option>
+   <option value="aus">Australia</option>
+   <option value="can">Canada</option>
+   <option value="ind">India</option>
+   <option value="rus">Russia</option>
+   <option value="usa">USA</option>
+    </select><br>
+    Enter your Mother tongue:<input list="lang">
+    <datalist id="lang">
+       <option value="telugu">
+       <option value="hindi">
+       <option value="English">
+       <option value="Tamil">
+       <option value="kanada">
+     </datalist>
+    Languages Known: 
+    Telugu: <input type="checkbox" name="lang" value="Telugu"/>
+    English: <input type="checkbox" name="lang" value="English"/>
+    Hindi: <input type="checkbox" name="lang" value="Hindi"/><br>
+    <input type="submit"><input type="reset">
+    </form>
+    </body>
+   </html>

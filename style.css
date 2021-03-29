@@ -1,0 +1,40 @@
+::marker {
+  content: "»";
+  font-size: 3em;
+  
+  --hue: 0;
+  color: hsl(var(--hue) 50% 50%);
+}
+
+li {
+  padding-inline-start: 1ch;
+}
+
+li:nth-child(2)::marker { --hue: 50; font-size: 2.5em; }
+li:nth-child(3)::marker { --hue: 100; font-size: 2em; }
+li:nth-child(4)::marker { --hue: 200; font-size: 1.5em; }
+li:nth-child(5)::marker { --hue: 250; font-size: 1em; }
+
+ul, ol {
+  max-width: 35ch;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+ 
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  padding: 2ch;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui;
+  font-size: 1.3rem;
+  line-height: 1.5; 
+  background: hsl(200 20% 98%);
+  color: hsl(200 30% 25%);
+}

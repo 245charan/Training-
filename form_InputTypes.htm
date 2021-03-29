@@ -1,0 +1,235 @@
+<!-- 
+    1 Text
+    2 Checkbox
+    3 Color
+    4 Date
+    5 Datetime Local
+    6 Email
+    7 File
+    8 Hidden
+    9 Month
+    10 Number
+    11 Password
+    12 Radio
+    13 Range
+    14 Search
+    15 Tel
+    16 Time
+    17 URL
+    18 Week
+
+
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Input Types</title>
+</head>
+
+<body>
+    <!-- Text -->
+    <input type="text" id="text"><br />
+    <button onclick="getValue()">Get Value</button><br><br>
+    <!-- Check Box -->
+    <input type="checkbox" id="checkbox"><br>
+    <button onclick="getValue1()">click</button> <br><br>
+
+    <!--   Mark the Languages you know :
+    <input list="lang">
+     <datalist id="lang">
+       <option value="telugu">
+       <option value="hindi">
+       <option value="English">
+       <option value="Tamil">
+       <option value="kanada">
+     </datalist> -->
+<!-- 
+
+    Languages Known:
+    Telugu: <input type="checkbox" name="lang" value="Telugu" />
+    English: <input type="checkbox" name="lang" value="English" />
+    Hindi: <input type="checkbox" name="lang" value="Hindi" />
+    Deutsch: <input type="checkbox" name="lang" value="Deutsch" /><br><br><br> -->
+
+
+    <!-- Color -->
+
+    <input type="color" id="color">
+    <button onclick="getValue2()">Color code</button><br><br>
+
+    <!-- Date -->
+    <input type="date" id="date">
+    <button onclick="getValue3()">Get Date</button><br><br>
+
+    <!-- Datetime Local -->
+    <input type="datetime-local" id="datetime-local">
+    <button onclick="getValue4()">Get Date & Time</button><br><br>
+
+    <!-- Email -->
+    <!-- <input type="email" id="email">
+    <input type="Submit"> <br>
+    <button onclick="getValue5()">Get Value</button><br><br> -->
+
+    <!-- File -->
+    <!-- <input type="file" id="file" onchange="getValue6();">
+    <img src="" alt="The image file will beshown here" id="file"/> -->
+
+    <!-- Hidden -->
+
+    <input type="hidden" value="This data is hidden" id="hidden"><br>
+    <button onclick="getValue7()">Get Value</button><br><br>
+    
+    <!-- Month -->
+    <input type="month" id="month"><br>
+    <button onclick="getValue8()">Get Value</button><br><br>
+
+    <!-- Number -->
+    
+    <!-- <input type="number" id="number"><br>
+    <input type="submit">
+    <button onclick="getValue9()">Get Value</button><br><br> -->
+
+    <!-- Password -->
+
+    
+    <input type="password" id="password"><br>
+    
+    <button onclick="getValue10()">Get Value</button><br><br>
+
+
+    <!-- Radio -->
+
+    
+    <input type="radio" name="gender" value="Male" id="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" name="gender" value="Female" id="female">
+    <label for="female">Female</label>
+    <br>
+
+    <button onclick="getValue11()">Get Value</button><br><br>
+
+    <!-- Range -->
+
+    <input type="range" id="range"><br>
+    
+    <button onclick="getValue12()">Get Range Value</button><br><br>
+
+
+
+    <!-- Search -->
+    <input type="search" id="search"><br>
+    
+    <button onclick="getValue13()">Get Value</button><br><br>
+
+    <!-- Tel -->
+    <input type="tel" id="tel"><br>
+    
+    <button onclick="getValue14()">Get Value</button><br><br>
+
+    <!-- Time -->
+
+    <input type="url" id="url"><br>
+    
+    <button onclick="getValue15()">Get Value</button><br><br>
+
+    <!-- URL
+    <input type="url" id="url"><br>
+    <input type="submit">
+    
+    <button onclick="getValue16()">Get Value</button><br><br> -->
+
+    <!-- Week -->
+
+
+    <input type="week" id="week"><br>
+    
+    <button onclick="getValue17()">Get Value</button><br><br>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function getValue() {
+            alert(document.getElementById('text').value);
+        }
+        function getValue1() {
+            alert(document.getElementById('checkbox').checked);
+        }
+        function getValue2() {
+            alert(document.getElementById('color').value);
+        }
+        function getValue3() {
+            alert(document.getElementById('date').value);
+        }
+        function getValue4() {
+            alert(document.getElementById('datetime-local').value);
+        }
+        function getValue5() {
+            alert(document.getElementById('email').value);
+        }
+
+        // function getValue6() {
+        //     var reader = new FileReader();
+        //     var file = document.getElementById('file').file[0];
+
+        //     reader.onload = function(e){
+        //         document.getElementById('file').src = e.target.file;
+        //     }
+        //     reader.readAsDataURL(file);
+       // }
+        function getValue7() {
+            alert(document.getElementById('hidden').value);
+        }
+        function getValue8() {
+            alert(document.getElementById('month').value);
+        }
+        function getValue9() {
+            alert(document.getElementById('number').value);
+        }
+        function getValue10() {
+            alert(document.getElementById('password').value);
+        }
+        function getValue11() {
+            var radios=document.getElementByName('gender');
+            var number_of_radios = radios.length;
+
+            for(var i=0;i<number_of_radios;i++)
+            {
+                if(radios[i].checked)
+                {s
+                    alert(radios[i].value);
+                }
+            }
+        }
+
+        function getValue12() {
+            alert(document.getElementById('range').value);
+        }
+        function getValue13() {
+            alert(document.getElementById('search').value);
+        }
+        function getValue14() {
+            alert(document.getElementById('tel').value);
+        }
+        function getValue15() {
+            alert(document.getElementById('time').value);
+        }
+        function getValue16() {
+            alert(document.getElementById('url').value);
+        }
+        function getValue17() {
+            alert(document.getElementById('week').value);
+        }
+        
+
+    </script>
+</body>
+
+</html>
