@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Elements</title>
+    <style>
+        #header {
+            background-color: lavender;
+            padding: 24px;
+        }
+
+        #navbar {
+            background-color: lawngreen;
+            padding: 8px;
+        }
+
+        #mainsection {
+            background-color: lightblue;
+            padding: 24px;
+        }
+
+        #section {
+            background-color: lightcoral;
+            padding: 16px;
+        }
+
+        .article {
+            background-color: lightgrey;
+            padding: 16px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <span>Menu 1</span>
+            <span>Menu 2</span>
+            <span>Menu 3</span>
+        </nav>
+    </header>
+
+    <main id="mainsection">
+        <section id="section">
+            <article class="article">
+                <header>
+                    <h3>Article Title One</h3>
+                    <a href="/">Author One</a>
+                </header>
+                <p>FTP - File Transfer Protocol - a definition for network transfer of files on the Internet.
+                    <br>
+                    HTTP - Hypertext Transfer Protocol - a definition for network requesting and transfer of Hypertext
+                    Markup Language (HTML, i.e. web pages) on the Internet.
+                </p>
+            </article>
+
+            <article class="article">
+                <header>
+                    <h3>Article Title Two</h3>
+                    <a href="/">Author Two</a>
+                </header>
+                <p> DNS - Domain Name System - a definition for resolving friendly names like https://acsicorp.com/ in
+                    to
+                    numeric IP addresses like 150.75.88.9.
+
+                    <br> SNMP - Simple Network Management Protocol - a definition for control and diagnostic messages on
+                    a network,
+                </p>
+            </article>
+        </section>
+    </main>
+    <div align="center">
+
+        <details>
+            <summary>Chapter 1</summary>
+            <p>This is a n introductory Chapter</p>
+        </details>
+
+        <details>
+            <summary>Chapter 2</summary>
+            <ul>
+                <li>Heading</li>
+                <li>Paragraph</li>
+                <li>Links</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Chapter 3</summary>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn">Learn Web Technologies</a>
+        </details>
+
+        <details>
+            <summary>Chapter 4</summary>
+            <p>This is a n introductory Chapter</p>
+        </details>
+
+    </div>
+
+</body>
+
+</html>
