@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+	<head><title> Events in JS </title></head>
+	<body>
+		<h1>HTML Attribute</h1>
+		<input value="Click me" onclick="alert('Click!')" type="button">
+		<span> 
+		<br>
+		
+		<input type="button" onclick="ClickEvent()" value="Click Event!">
+		<br>
+		<h1>DOM property</h1>
+		<input type="button" id="ele" value="Click me">
+		<br>
+		<h1> Method : To add multiple handlers <h1>
+		<input id="elem" type="button" value="Click me"/>
+		<script>
+			function ClickEvent() {
+				alert("Click Ok for 3 times");
+				for(let i=1; i<=3; i++) {
+				alert("Click " + i);
+				}
+			}
+			
+			ele.onclick = function() {
+			alert('Thank you');
+			};
+			
+			function handler1() {
+				alert('addEventListener!');
+			};
+
+		  function handler2() {
+			alert('addEventListener!! Thanks again!');
+		  }
+
+		  elem.onclick = () => alert("Hello");
+		  elem.addEventListener("click", handler1); // Thanks!
+		  elem.addEventListener("click", handler2); // Thanks again!
+</script>
+
+	</body>
