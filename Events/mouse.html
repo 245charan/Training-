@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Events</title>
+</head>
+<style>
+	.btn{
+	padding:10px 14px;
+	background-color: red;
+	border: 2px solid black;
+	color: white;
+	cursor: pointer;
+	border-radius:8px;
+	}
+</style>
+<body>
+	<div class="container">
+		<h1 id ="heading" >This is Heading</h1>
+		<p id="para">The horse is one of two extant subspecies of Equus ferus. It is an odd-toed ungulate mammal belonging to the taxonomic family Equidae. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, Eohippus, into the large, single-toed animal of today.</p>
+	</div>
+	<button class="btn" onclick="toggleHide()">Show/Hide</button>
+	<script>
+		let para = document.getElementById('para');
+		para.addEventListener('mouseover', function run(){
+			console.log('Mouse Inside');
+		});
+		
+		para.addEventListener('mouseout', function run(){
+			console.log('Mouse now went outside');
+		});
+		
+		function toggleHide(){
+			let para = document.getElementById('para');
+			if(para.style.display != 'none'){
+				para.style.display = 'none';
+			}
+			else{
+				para.style.display = 'block';
+			}
+		}
+		
+		 heading.addEventListener("mousedown", function() {
+		 console.log("mouse is down!");
+		} );
+			heading.addEventListener("mouseup", function() {
+			console.log("mouse is up!");
+		} );
+		
+	</script>
+	</html>
+	
+				
