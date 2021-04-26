@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XMLHttpRequest-01</title>
+  </head>
+  <body>
+    <button onclick="makeRequest()">Make Request</button>
+	<div id="demo"></div>
+    <script>
+      var httpRequest =new XMLHttpRequest();
+	  
+	  function makeRequest(){
+		  httpRequest.onreadystatechange = writeContent;
+		  httpRequest.open("GET","https://raw.githubusercontent.com/245charan/Twitter-Sentiment-Analysis-NLP/master/test_tweets.csv");
+		  httpRequest.send();
+	  }
+	  
+	  function writeContent(){
+		  // readyState number value representes the state of the request.
+		  if(httpRequest.readyState === 4){
+			  if(httpRequest.status == 200){
+				  document.getElementById("demo").innerHTML = httpRequest.responseText;
+			  } else{
+				  documet.getElementById("demo").innerHTML = "404 (Not Found)";
+				  alert('There was a problem with the request.');
+			  }
+		  }else if(httpRequest.readyState === 3){
+			  alert('Downloading');
+		  }else if(httpRequest.readyState === 2){
+			  alert('send() has been called');
+		  }else if(httpRequest.readyState === 1){
+			  alert('open() has been called');
+		  }else if(httpRequest.readyState === 0){
+			  alert('Client has been created');
+		  }
+	  }
+	  	  
+    </script>
+  </body>
+</html
