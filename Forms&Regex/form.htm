@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang ="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Validation Using Regex</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+       
+        <h3 align = "center">This is my form</h3>
+        <form id="form" action="my-handling-form-page" method="POST" >
+        <ul>
+            <li>
+                <label for="name">User name:</label>
+                <input id="name" name="user_name" required>
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input id="mail" name="user_mail" required>
+            </li>
+			<li>
+                <label for="phone">Phone no:</label>
+                <input id="phone" name="user_phone" pattern="[0-9]{10}" required>
+            </li>
+            <li>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="user_password" required>
+            </li>
+			<li>
+				<label for="country">Country:</label> 
+				<select name="country" id="country" >
+				   <option value="Default">(Please select a country)</option>
+				   <option value="aus">Australia</option>
+				   <option value="can">Canada</option>
+				   <option value="ger">Germany</option>
+				   <option value="ind">India</option>
+				   <option value="rus">Russia</option>
+				   <option value="usa">USA</option>
+				</select>			
+			</li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit"> Send your response</button>
+            </li>
+        </ul>
+        </form>
+		<script type="text/JavaScript" src="form.js"></script>
+    </body>
+</html>
