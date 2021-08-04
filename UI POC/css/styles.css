@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+@font-face {
+  font-family: charan;
+  src: url("../Font/charan.ttf");
+}
+
+@font-face {
+  font-family: Courgette;
+  src: url("../Font/Courgette-Regular.ttf");
+}
+
+body{
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: charan;
+}
+body::-webkit-scrollbar{
+  width: 0;
+}
+body::-webkit-scrollbar-track  {
+  width: 0;
+}
+/* body::-webkit-scrollbar-thumb{
+  background-color:rgb(108, 117, 115);
+  border-radius: 20px;
+} */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top:0;
+  background-color: #3a3a3a;
+  z-index: 10;
+  font-family: charan;
+  height: 80px;
+}
+
+.logo {
+  background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: cornsilk;
+  font-family: charan;
+  font-size: 55px;
+  font-weight: bolder;
+}
+.nav-list {
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 37px;
+}
+.nav-list li:hover {
+  background-color: rgb(145, 139, 139);
+  transform: all 0.7s ease-out;
+  color: rgb(128, 128, 128);
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: honeydew;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.left-nav {
+  text-align: left;
+  margin: 5px;
+  /* background-color: cornsilk; */
+}
+
+.right-nav {
+  text-align: left;
+  margin: 5px;
+  /* background-color: cornsilk; */
+}
+
+.material-icons {
+  margin: 10px;
+  background-color: gray;
+  border-radius: 40px;
+  padding: 6px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 2px 1px;
+}
+.logo-burger {
+  color: cornsilk;
+  font-family: "charan";
+  font-size: 18px;
+  margin: 1px 1px;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    transform: all 0.7s ease-out;
+    height: 300px;
+  }
+  .left-nav {
+    text-align: center;
+  }
+  .right-nav {
+    text-align: center;
+  }
+
+  .burger {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+.logo {
+  display: none;
+}
+.h-nav-resp {
+  height: 50px;
+}
+.v-class-resp {
+  opacity: 0;
+}
+}

@@ -1,0 +1,131 @@
+footer{
+    margin-top: 20px;
+}
+
+.signup{
+    display:grid;
+}​​​​
+
+
+.mail-icon-wrapper{
+    display: grid;
+    margin-top: 10px;
+}
+.mail-icon{
+    margin: auto;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px #ddd;
+}
+
+.mail-icon>svg{
+    margin: auto;
+}
+
+.su-text{
+    margin: auto;
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sub-email{
+    margin: auto;
+    display: flex;
+    min-width: 300px;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.sub-email input[type=text]{
+    flex: 4;
+}
+
+.sub-email button{
+    flex: 1;
+}
+
+address{
+    margin: 20px 0;
+}
+
+.address>span{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.address .name{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.address .door-street-place{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.address .sml>a{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.other-links{
+    display: grid;
+}
+
+.other-links>div{
+    margin: auto;
+}
+
+.other-links .avh{
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.other-links .avh:nth-last-child(1){
+    border: none;
+}
+
+.avh a{
+    color: #111;
+    text-decoration: none;
+}
+
+.last-block{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #111;
+}
+
+.last-block>div{
+    margin: 0 10px;
+}
+
+.pay-mode>svg:nth-last-child(1){
+    margin-bottom: 3px;
+}
+
+footer{
+    overflow-x: auto;
+    overflow-y: auto;
+    font-family: charan;
+  }
+  footer::-webkit-scrollbar{
+    width: 0;
+  }
+  footer::-webkit-scrollbar-track  {
+    width: 0;
+  }
+  /* body::-webkit-scrollbar-thumb{
+    background-color:rgb(108, 117, 115);
+    border-radius: 20px;
+  } 

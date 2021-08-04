@@ -1,0 +1,62 @@
+.best-seller{
+    height: 60vh;
+    font-family: charan;
+    margin: 15px;
+}
+/* .gray-card{
+    background-color: darkgray;
+    width: 50vw;
+    height: 50vh;
+} */
+.best-seller .gray-card>p{
+    margin: 30px 10px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.outer-best-seller{
+    display: flex;
+}
+
+.outer-best-seller img{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.on-img{
+    position: relative;
+    left: 195px;
+    bottom: 80px;
+    background-color: rgb(255, 255, 255);
+}
+.item-title{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: -59px;
+    text-align: center;
+}
+
+.outer-text-card{
+    /* background-color: crimson; */
+    display: inline;
+    padding: 40px;
+
+}
+
+.text-card{
+    padding-bottom: 50px;
+}
+.text-card .text-small{
+    width: 70%;
+}
+.outer-text-card a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  background-color: rgb(238, 24, 53);
+  padding: 10px 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
