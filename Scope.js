@@ -1,4 +1,5 @@
 //Lexical Scope or Static Scope -> write-time
+// Example 1
 function foo() {
 	console.log( a ); // 2
 }
@@ -28,3 +29,4 @@ function grandfather() {
         }
     }
 }
+

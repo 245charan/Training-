@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Serialization</title>
+    </head>
+    <body>
+        <h2>Serialization in Javascript</h2>
+        <!-- <form id="post">
+            <label for="name">Your Name :</label><br>
+            <input type="text" name="name"<br>
+            <label for="age">Your Age :</label><br>
+            <input type="text" name="age"><br><br>
+            <input type="submit">
+        </form> -->
+        <form id="post" enctype="application/x-www-form-urlencoded">
+
+          <label for="name">Full Name:</label>
+          <input  type="text" name="name" id="name" value="Ashok Polarapu"><br><br>
+          <label for="age">Age:</label>
+          <input type="text" name="age" value="22"><br><br>
+
+          <label>Courses :</label><br>
+          <input type="checkbox" name="HTML" id="html">
+          <label for="html">HTML</label><br>
+          <input type="checkbox" name="CSS" id="css">
+          <label for="football">CSS</label><br>
+          <input type="checkbox" name="Javascript" id="Javascript">
+          <label for="Javascript">Javascript</label><br>
+          <input type="checkbox" name="Java" id="Java">
+          <label for="Java">Java</label><br><br>
+             
+          <label>Hobbies :</label><br>
+          <input type="checkbox" name="cricket" id="cricket">
+          <label for="cricket">cricket</label><br>
+          <input type="checkbox" name="football" id="football">
+          <label for="football">football</label><br>
+          <input type="checkbox" name="running" id="running">
+          <label for="running">running</label><br>
+          <input type="checkbox" name="news" id="news">
+          <label for="news">Reading news</label><br><br>
+          <button type="button" onclick="fun1()">click ME</button>
+          <button>Submit</button>
+        
+        </form>
+        <img id="img1" src="https://m.cricbuzz.com/a/img/v1/192x192/i1/c170661/virat-kohli.jpg" alt="">
+         
+        <form id="form1">
+          <form id="form2">
+            <button>Submit</button>
+          </form>
+        </form>
+        <input form="form1" type="text"  value="Gowri"><br><br>
+
+        <input form="form2" type="text" value="Aruna"><br><br>
+        <button form="form1">Submit</button>
+        <script src="serialize.js" defer></script>
+        <script></script>
+    </body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").text($("form").serialize());
+  });
+});
+</script>
+</head>
+<body>
+
+<form action="">
+  First name: <input type="text" name="FirstName" value="Mickey"><br>
+  Last name: <input type="text" name="LastName" value="Mouse"><br>
+</form>
+
+<button>Serialize form values</button>
+
+<div></div>
+
+</body>
+</html> -->
