@@ -1,0 +1,29 @@
+.parent {
+  border: 2px solid yellow;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.origin {
+  text-align:center;
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+.draggable {
+  background-color: blue;
+  text-align:center;
+  font: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone {
+  text-align:center;
+  background-color:green;
+  flex-basis: 100%;
+  padding: 10px;
+}

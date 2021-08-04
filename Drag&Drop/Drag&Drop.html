@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Drag-and-Drop Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+	<h1 align=center> Drag-and-Drop</h1>
+	<div class="parent">
+	  <div class="origin"> TO-DO List
+		<!--img src="C:\Users\charan.netha\Downloads\tyrion.jpg" width='50px' height='50px' draggable='true' ondragstart="onDragStart(event);"-->
+	 
+		<div id="draggable-1" class="draggable" draggable = "true" ondragstart="onDragStart(event);">
+			Task 1
+		</div>
+		<div id="draggable-1" class="draggable" draggable = "true" ondragstart="onDragStart(event);">
+		  Task 2
+		</div>
+	 </div>
+
+	  <div class="dropzone" ondrop="onDrop(event);" ondragover ="onDragOver(event);">
+		Done!
+	  </div>
+	</div>
+	<script src="script.js"></script>
+  </body>
+</html>
