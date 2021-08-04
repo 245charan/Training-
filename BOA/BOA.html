@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/BOA.css" />
+	<link rel="stylesheet" href="css/ResponsiveBOA.css" />
+	<link rel="stylesheet" href="css/salesLog.css" />
+	<title> Beverage Ordering Application </title>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="home">
+			<a class="" href="C:\Users\charan.netha\Desktop\JS\BOA\home.html">Home</a>
+		</div>
+		<div class="nav-sales">
+			<button class="sales">Sales</button>
+		</div>
+		<div class="nav-order">
+			<button class="nav-btn">Order</button>
+		</div>
+	</nav>
+
+	<!-- Container has left split and right split -->
+	<section class="container">
+
+		<div class="split left">
+			<h1>Beverage Menu</h1>
+			<div class="menu-center"></div>
+		</div>
+		
+		<!-- In Queue, Being Mixed, Ready to collect -->
+		<div class="split right">
+			<h1>Beverage Queue</h1>
+			<section class="outer-queue">
+				<div class="column1">
+					<h4 class='heading'>In Queue</h4>
+					<div class='border'>
+						<div class="in-queue"></div>
+					</div>
+				</div>
+				<div class="column2">
+					<h4 class='heading'>Being Mixed</h4>
+					<div class='border'>
+						<div class="being-mixed"></div>
+					</div>
+				</div>
+				<div class="column3">
+					<h4 class='heading'>Ready to Collect</h4>
+					<div class='border'>
+						<div class="ready-to-collect"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+
+	<!-- Popup Section -->
+	<section class="order" id="order">
+		<div class="inner-order">
+			<div id='close' class="close">+</div>
+			<h2 class="text-center">Order Your Beverage</h2>
+			<div class="inner">
+				<!-- form with customer name and beverage option menu -->
+				<form id="form" novalidate>
+					<ul>
+						<li>
+							<label for="customer_name">Name </label>
+							<input id="customer_name" class="customer_name" name="customer_name" required>
+						</li>
+						<li>
+							<label for="beverage">Beverage </label>
+							<select name="beverage" class="beverage" id="beverage" required>
+								<option value="" disabled selected hidden>-Please Select-</option>
+								<!--<option value="Sparkling Cranberry Punch">Sparkling Cranberry Punch</option>
+								<option value="Iced Chocolate Delight">Iced Chocolate Delight</option>
+								<option value="Raspberry Fizz">Raspberry Fizz</option>
+								<option value="Virgin Frozen Margarita">Virgin Frozen Margarita</option>
+								<option value="Summer Punch">Summer Punch</option>-->
+							</select>
+							<span class='error'></span>
+						</li>
+						<li align=center>
+							<button class="btn-dark" id="btn"> Submit </button>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+	<!--  Sales Log -->
+	<section class="salesTable">
+	<div class='populateDiv'>
+		<button class="populate">Populate</button>
+		</div>
+		<div class='outline'>
+			<table>
+			<caption>Sales Log</caption>
+			 <tr>
+				<th>S.no</th>
+				<th>Item</th>
+				<th>Order Id</th>
+				<th>price</th>
+			  </tr> 
+			   <!--
+			   <tr>
+				<td>1</td>
+				<td>Summer Punch</td>
+				<td>101</td>
+				<!-- <td>₹150</td>
+			  </tr> -->
+			</table>
+		</div>
+		
+	</section>
+	
+	<!--<section class="overflow">
+	<button class='overflowButton'>overflow</button>
+	<div class='overflowDiv'>
+		<h5>Ready Desk is Occupied</h5>
+	</div>
+	
+	</section>-->
+	
+	<script src="JS/BOA.js"></script>
+	<script src="JS/ResponsiveBOA.js"></script>
+	<script src="JS/Validation.js"></script>
+	<script src="JS/popup.js"></script>
+	<script src="JS/optionList.js"></script>
+</body>
+
+</html>

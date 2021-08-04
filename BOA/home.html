@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home | Beverage Ordering Application </title>
+	<link rel="stylesheet" href="css/home.css" />
+</head>
+<section>
+</section>
+
+
+<!-- Select City -->
+<section class="border">
+	<form class="cityForm" id="cityForm" novalidate>
+		<div class="row">
+			<div class="col">
+				<h5> beverage Pathshala </h5>
+			</div>
+			<!-- Region -->
+			<div class="col">
+				<label for="region">Region </label>
+				<select class="main-menu" name="region" id="region">
+					<option value="" disabled selected hidden>-Select-</option>
+					<option value="Hyderabad">Hyderabad</option>
+					<option value="Amaravati">Amaravati</option>
+					<option value="Karimnagar">Karimnagar</option>
+					<option value="Warangal">Warangal</option>
+				</select>
+			</div>
+			<!-- Location -->
+			<div class="col">
+				<label for="location">Location </label>
+				<select class="sub-menu" name="location" id="location">
+					<option value="" disabled selected hidden>-Select-</option>
+				</select>
+			</div>
+			<div class='btn'>
+				<button class="btn-dark" id="btn"> Submit </button>
+			</div>
+		</div>
+	</form>
+</section>
+<script src="JS/HomeBOA.js"></script>
+
+<body>
+</body>
+
+</html>

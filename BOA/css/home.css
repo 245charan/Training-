@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 25vh;
+}
+
+.border {
+  top: 100px;
+}
+.col {
+  padding-bottom: 20px;
+}
+h5 {
+  font-size: 50px;
+  color: #ccc;
+  position: inherit;
+  left: 50%;
+  font-family: monospace;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: -1px;
+  cursor: none;
+}
+.cityForm:hover {
+  box-shadow: 1px 0px 20px 3px greenyellow;
+}
+
+.cityForm {
+  /* margin: 0 auto; */
+  width: 600px;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 26px auto;
+  /* border: 1px solid rgb(204 204 204); */
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  position: relative;
+  transition-duration: 0.4s;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  font-size: larger;
+  font-family: monospace;
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(204 204 204);
+}
+.btn-dark {
+  color: black;
+  padding: 9px 20px;
+  margin: 7px 3px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: large;
+  box-shadow: 1px 0px 20px 1px greenyellow inset;
+}
+.btn-dark:hover {
+  background-color: #cdf987;
+}
+.main-menu,
+.sub-menu {
+  height: 40px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  align-items: center;
+  text-align: center;
+  width: 230px;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 6px -7px 20px 1px greenyellow inset;
+}
+
+span {
+  font-size: 17px;
+  background: #de0606a6;
+  display: flex;
+  height: 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
+
+option {
+  color: black;
+  font-size:large;
+  font-weight:bold;
+}

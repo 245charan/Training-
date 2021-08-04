@@ -1,0 +1,76 @@
+.salesTable{
+  border: 3px solid #ccc;
+  background: #1a1a1a;
+  height: 110%;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.outline{
+  border: 3px solid #ccc;
+  width: 500px;
+  height: 550px;
+  padding: 10px 0px;
+  margin: 160px auto;
+  background: #ffffff;
+  border-radius: 4px;
+  position: relative;
+  display: inline-grid;
+  overflow-y:auto;
+  top:10px;
+  box-shadow: 1px 0px 20px 3px greenyellow inset;
+}
+
+.outline::-webkit-scrollbar {
+  width: 3px;
+  /* background-color:yellowgreen; */
+}
+
+.outline::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+  
+.populate {
+    background-color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    color: #ffffff9e;
+    font-family: monospace;
+    width: auto;
+    height: auto;
+}
+
+caption { 
+  padding-bottom: 0.5em; 
+  font-size: 30px;
+  font-weight:bolder;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+td:nth-child(1) { background: hsl(150, 50%, 50%); }
+td:nth-child(2) { background: hsl(160, 60%, 50%); }
+td:nth-child(3) { background: hsl(170, 70%, 50%); }
+td:nth-child(4) { background: hsl(180, 80%, 50%); }
