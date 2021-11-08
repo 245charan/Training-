@@ -297,7 +297,7 @@ switch (grade) {
     console.log("You can do better");
     break;
   default:
-    console.log("Oy vey");
+    console.log("You need to work more");
     break;
 }
 
@@ -323,7 +323,7 @@ var myObj = {myKey: "myValue", "my other key": 4};
 // When functions attached to an object are called, they can access the object
 // they're attached to using the `this` keyword.
 var myObj = { 
-  name: "Destiny's Child",
+  name: "Charan",
   sayMyName: function() {
     console.log(this.name);
   }
