@@ -40,7 +40,7 @@ Here's what all those big words above mean:
 6. [Bugs and Error Handling](#bugs)
 7. [New ES6 stuff](#es6)
 
-TODO: Add 8. Useful Libraries (LoDash, jQuery), 9. Javascript in the browser, 10. NodeJS
+TODO: Add 8. Promise, async, await, Fetch API 9.Useful Libraries (LoDash, jQuery), 9. Javascript in the browser, 10. NodeJS
 
 <a name="basics"></a>
 ## 1. Basics 
