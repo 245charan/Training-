@@ -119,7 +119,7 @@ false;
 "one two three four".split(" "); // ['one', 'two', 'three', 'four']
 
 // String replace
-"happy birthday henry!".replace("h", "H"); // "Happy birthday Henry!"
+"happy birthday Charan!".replace("h", "H"); // "Happy birthday Charan!"
 
 // ES6 also introduces Symbol as a new primitive type
 // But I'll add that on here once I actually figure out what it is
@@ -238,10 +238,10 @@ myArray.length; // = 4
 myArray[3] = "Hello";
 
 //ES7 includes() can be used with arrays to check for the presence of a value. it is case sensitive
-let names = ["Samuel", "Hamilton", "Eric"];
-names.includes("Samuel"); //true
-names.includes("samuel"); //false
-names.includes("John"); //false
+let names = ["Avinash", "Rakesh", "Uday"];
+names.includes("Avinash"); //true
+names.includes("avinash"); //false
+names.includes("Charan"); //false.
 ```
 
 <a name="logic"></a>
@@ -328,7 +328,7 @@ var myObj = {
     console.log(this.name);
   }
 }
-myObj.sayMyName(); // outputs "Destiny's Child"
+myObj.sayMyName(); // outputs "Charan"
 
 // Object attributes can also be accessed using the subscript syntax,
 myObj["my other key"]; // = 4
@@ -348,9 +348,9 @@ for(var property in myObj) { // do something }
 // JSON (JavaScript Object Notation) is just a special case of Object literal notation
 // where the keys are strings wrapped in quotes
 var json_stuff = {
-  "firstName": "John",
-  "lastName": "Doe",
-  "Age": 25
+  "firstName": "Charan",
+  "lastName": "Netha",
+  "Age": 22
 }
 
 // JS Object => JSON
@@ -490,17 +490,17 @@ speak.apply(pig, [1]); // outputs "oink"
 ```
 The call and apply methods allow us to do something called __Function Borrowing__.
 ```javascript
-var darthVader = { 
-  son: "Luke",
+var Daddy = { 
+  son: "Chinnu",
   saying: function(){
     console.log(this.son + ", I am your father");
   }
 };
-var luke = { son: "Ben" };
+var luke = { son: "Chinmaie" };
 
-darthVader.saying.call(luke);
-// borrowing Darth Vader's saying
-// outputs "Ben, I am your father"
+Daddy.saying.call(luke);
+// borrowing Daddy's saying
+// outputs "Chinmaie, I am your father"
 ```
 The bind method allows us to do __Function Currying__.
 ```javascript
@@ -613,7 +613,7 @@ function sayHelloInFiveSeconds(name){
     // because inner is "closed over" sayHelloInFiveSeconds, inner still has
     // access to the `prompt` variable when it is finally called.
 }
-sayHelloInFiveSeconds("Adam"); // will open a popup with "Hello, Adam!" in 5s
+sayHelloInFiveSeconds("Charan"); // will open a popup with "Hello, Charan!" in 5s
 
 
 // Example 2
@@ -860,7 +860,7 @@ class SkinnedMesh extends THREE.Mesh {
 
 ### String Interpolation 
 ``` javascript
-var name = "Bob", time = "today";
+var name = "Chinnu", time = "today";
 `Hello ${name}, how are you ${time}?`
 ```
 
@@ -869,7 +869,7 @@ var name = "Bob", time = "today";
 ``` javascript
 if (1 < 2) {
   let i = 4;
-  const name = 'Jon Snow'
+  const name = 'Tyrion Lanister'
 }
 var i = 5; // error, i is already defined
 name = 'Samwell Tarly' // error, const can only be defined once
